@@ -19,31 +19,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="body">
-    <div class="container-lg">
+<body class="body gradient-container">
+    <div class="">
         <!--lg = large break point, night-light=text dark-->
-        <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
-            <div class="contianer">
-                <a href="#" class="navbar-brand">
-                    <img src="img/droplet.png" alt="Water Logo" class="d-inline-block align-text-top w-50">
-                </a>
-            </div>
+        <nav class="navbar navbar-expand-lg navbar-dark nb-background-color shadow" >
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo.png" alt="Water Logo" class="d-inline-block align-text-top w-50 p-2">
+            </a>
             <!--Hamburger icon-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
-
             </button>
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="authors.html" class="nav-link hover-underline-animation nvMenuItem">Authors</a>
+                        <a style="color:white" href="authors.html" class="nav-link hover-underline-animation nvMenuItem">Authors</a>
                     </li>
                     <li class="nav-item">
-                        <a href="procedure.html" class="nav-link hover-underline-animation nvMenuItem">Procedure</a>
+                        <a style="color:white" href="procedure.html" class="nav-link hover-underline-animation nvMenuItem">Procedure</a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="nav-link hover-underline-animation nvMenuItem">Results</a>
+                        <a style="color:white" href="results.html" class="nav-link hover-underline-animation nvMenuItem">Results</a>
                     </li>
                 </ul>
             </div>
@@ -54,55 +51,54 @@
             <br>
             <div class="text-center">
                 <h1>Procedure</h1>
-                <h2>Using a numbered list, describe your procedure (include pictures) </h2>
 
             </div>
             <hr><br>
 
-            <table class="table table-hover text-center table-light table-bordered border-dark-subtle">
+            <table class="table nb-background-color table-borderless table-hover text-center rounded-4 text-light">
                 <thead>
-                    <tr class="table-primary">
-                        <th><h3>Step</h3></th>
-                        <th><h3>Description</h3></th>
-                        <th><h3>Image</h3></th>
+                    <tr class="">
+                        <th><h3 class="p-2" style="font-weight: bold;">Step</h3></th>
+                        <th><h3 class="p-2" style="font-weight: bold;">Description</h3></th>
+                        <th><h3 class="p-2" style="font-weight: bold;">Image</h3></th>
                     </tr>
                 </thead>
                 
                 <tbody class="table-group-divider">
                     <tr class="align-middle">
-                        <th scope="row" class="table-secondary">
+                        <th scope="row" class="">
                             <h3>1</h3>
                         </th>
-                        <td><h3 class="howTo">Start Python Flask server</h3></td>
-                        <td class="text-center"><img src="img/python-logo.png" alt="Python Logo"></td>
+                        <td><h3 class="howTo">Acquire 5 petri dishes and bisect 15 planaria</h3></td>
+                        <td class="text-center"><img src="img/step1.jpg" alt="Python Logo"></td>
                     </tr>
                     <tr class="align-middle">
-                        <th scope="row" class="table-secondary">
+                        <th scope="row" class="">
                             <h3>2</h3>
                         </th>
-                        <td><h3 class="howTo">Power circuit on. SR-04/05 transmits data to Nano IoT</h3></td>
-                        <td class="text-center"><img src="img/range-finder-tp.png" alt="Python Logo"></td>
+                        <td><h3 class="howTo">Put 6 in each dish and label them from 0-4 hours</h3></td>
+                        <td class="text-center"><img src="img/step2.jpg" alt="Python Logo"></td>
                     </tr>
                     <tr class="align-middle">
-                        <th scope="row" class="table-secondary">
+                        <th scope="row" class="">
                             <h3>3</h3>
                         </th>
-                        <td><h3 class="howTo">Nano IoT connects to PC via WiFi and sends data to Arduino program</h3></td>
-                        <td class="text-center"><img src="img/nano33-iot3.png" alt="Python Logo"></td>
+                        <td><h3 class="howTo">Set up 4 boxes with a LED bulb on a timer for as many hours as their group (1-4 hours)</h3></td>
+                        <td class="text-center"><img src="img/step3.jpg" alt="Python Logo"></td>
                     </tr>
                     <tr class="align-middle">
-                        <th scope="row" class="table-secondary">
+                        <th scope="row" class="">
                             <h3>4</h3>
                         </th>
-                        <td><h3 class="howTo">Arduino and Flask server communicate via HTTP request</h3></td>
-                        <td class="text-center"><img src="img/arduino-logo.png" alt="Arduino Logo"></td>
+                        <td><h3 class="howTo">Record lengths of Planaria and qualitative observations. Place 1-4 hours Planaria groups under corresponding box and the 0 hours group on table, then turn on the timer.</h3></td>
+                        <td class="text-center"><img src="img/step4.jpg" alt="Arduino Logo"></td>
                     </tr>
                     <tr class="align-middle">
-                        <th scope="row" class="table-secondary">
+                        <th scope="row" class="">
                             <h3>5</h3>
                         </th>
-                        <td><h3 class="howTo">Flask connects to Firebase and sends data for storage</h3></td>
-                        <td class="text-center"><img src="img/firebase-logo.png" alt="Firebase Logo"></td>
+                        <td><h3 class="howTo">Repeat the previous step for 15 days.</h3></td>
+                        <td class="text-center"><img src="img/step5.jpg" alt="Firebase Logo"></td>
                     </tr>
                 </tbody>
 
@@ -113,12 +109,11 @@
         </section>
 
 
-        <footer class="p-5 footer text-light text-center position-relative">
-            <div container="container">
-                <p class="lead ">Copyright &copy; SE 2024 Bootstrap Demo</p>
-                <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
-                </a>
+        <footer class="footer p-3 d-flex text-light text-center position-relative justify-content-center align-items-center shadow">
+            <div class="container position-relative">
+                <p class="lead mt-2 mb-2">
+                    Copyright &copy; Medhansh Puri
+                </p>
             </div>
         </footer>
     </div>
