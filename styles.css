@@ -119,6 +119,17 @@ body::-webkit-scrollbar {
 
 /* ----------------- ID CSS ----------------- */
 
+#chart-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Set a maximum width */
+}
+
+.chartjs-sample {
+    padding: 10px;
+}
+
+
 /* -----------------Underline Animation CSS -----------------*/
 
 .hover-underline-animation {
