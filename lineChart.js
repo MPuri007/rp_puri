@@ -84,7 +84,7 @@ async function createChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'Percent of Length Increased Days 1-15 for Each Group',
+                    text: 'Percent of Length Increased Days 1-15',
                     font: {
                         size: 24,
                     },
