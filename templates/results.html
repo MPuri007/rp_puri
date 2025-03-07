@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}Planaria Research - Results{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='lineChart.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<section class="procedure">
+    <div class="container text-center">
+        <h1>Results</h1>
+        <hr><br>
+    </div>
+</section>
+
+<section class="chartjs-sample mb-5">
+    <div class="container d-flex justify-content-center align-items-center bg-light rounded-4 p-3 shadow" id="chart-wrapper" style="height: 500px;">
+        <canvas id="lineChart"></canvas>
+    </div>
+</section>
+{% endblock %}

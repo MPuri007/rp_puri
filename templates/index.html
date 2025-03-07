@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block title %}Planaria Research - Home{% endblock %}
+
+{% block content %}
+<section class="text-light p-2 text-center overflow-hidden">
+    <div class="row">
+        <div class="col-sm-6 p-3 d-flex align-items-center">
+            <img class="img-fluid rounded-4 shadow" src="{{ url_for('static', filename='img/data.png') }}" alt="Data of Medhansh Puri">
+        </div>
+        <div class="col-sm-6 p-2 d-flex align-items-center">
+            <div>
+                <h2 class="display-5" style="font-weight: bold;">Effect of Different Amounts of Artificial Light At Night (ALAN) on Planarian Regeneration Rate</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="overview text-dark p-2 text-left overflow-hidden">
+    <div class="row abstract">
+        <h1 class="text-center" style="color: black;">Abstract</h1>
+        <div class="col-sm-4 p-3 align-content align-items-center justify-items">
+            <div style="height: auto; width: 100%; align-content: center;" class="nb-background-color rounded-4 shadow p-2">
+                <ul class="lead overview-font ovPadLeft">
+                    <li>
+                        <h6 style="font-size: 1rem;">Artificial light at night (ALAN) has significant impacts on the behaviors and ecologies of many organisms, particularly invertebrates.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">The effects of ALAN on planarian regeneration have not been explored yet.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">This study investigated how different ALAN exposures affected planarian regeneration rates.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">Five groups, each with six bisected planaria, were set up.</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4 p-3 align-content align-items-center justify-items">
+            <div style="height: auto; width: 100%; align-content: center;" class="nb-background-color rounded-4 shadow p-2">
+                <ul class="lead overview-font ovPadLeft">
+                    <li>
+                        <h6 style="font-size: 1rem;">The 0-hour control group was placed under normal light conditions.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">The 1-4 hour groups were exposed to ALAN for the number of hours corresponding to the group name (e.g., 1 hour, 2 hours, etc.).</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">Raw data was analyzed to assess the correlation between ALAN exposure (independent variable) and regeneration rate (dependent variable).</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4 p-3 align-content align-items-center justify-items">
+            <div style="height: auto; width: 100%; align-content: center;" class="nb-background-color rounded-4 shadow p-2">
+                <ul class="lead overview-font ovPadLeft">
+                    <li>
+                        <h6 style="font-size: 1rem;">Regeneration rates of planaria were observed and recorded.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">There were no statistically significant differences in planarian regeneration rates across the various ALAN exposure conditions.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">Despite minor daily light cycle disruptions from 1 to 4 hours of ALAN, planarians exhibited consistent regeneration rates.</h6>
+                    </li>
+                    <li>
+                        <h6 style="font-size: 1rem;">Further research is needed to validate these findings and explore potential long-term effects.</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

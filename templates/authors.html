@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Planaria Research - Authors{% endblock %}
+
+{% block content %}
+<section class="text-dark p-2 text-center">
+
+    <div class="container">
+        <br>
+        <h1 class="text-center about-team" style="color: black;">Medhansh Puri</h1>
+        <hr style="color: rgb(0, 0, 0);"><br>
+
+    </div>
+</section>
+
+<section class="overflow-hidden"> 
+    <div class="row">
+        <div class="col-sm-1 p-2 d-flex align-items-center overflow-hidden"> </div>
+        <div class="col-sm-3 p-2 d-flex align-items-center overflow-hidden">
+            <img class="img-fluid rounded-circle shadow-sm" src="{{ url_for('static', filename='img/img_3519.jpg') }}" alt="Picture of Medhansh Puri">
+        </div>
+        <div class="col-sm-1 p-2 d-flex align-items-center overflow-hidden"> </div>
+        <div class="col-sm-6 p-3 d-flex align-items-center overflow-hidden">
+            <div class="nb-background-color rounded-4 shadow">
+                <p class="p-3" style="font-size: 20px; color: white;">Medhansh Puri is a young scholar who is interested in biology and technology. He also is a strong advocate for resolving issues of climate change. The goal of his research paper was to ascertain if light pollution could be a potential threat to regeneration in planarian communities.
+                    <br><br>
+                    Special thanks to Dr. Ellsworth and Mr. Queenan for helping me with my research.
+                </h2>
+            </div>
+        </div>
+    </div>
+    <br>
+</section>
+{% endblock %}

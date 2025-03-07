@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block title %}Planaria Research - Procedure{% endblock %}
+
+{% block content %}
+<section class="procedure">
+    <div class="container">
+        <br>
+        <div class="text-center">
+            <h1>Procedure</h1>
+
+        </div>
+        <hr><br>
+
+        <table class="table nb-background-color table-borderless table-hover text-center rounded-4 text-light">
+            <thead>
+                <tr class="">
+                    <th><h3 class="p-2" style="font-weight: bold;">Step</h3></th>
+                    <th><h3 class="p-2" style="font-weight: bold;">Description</h3></th>
+                    <th><h3 class="p-2" style="font-weight: bold;">Image</h3></th>
+                </tr>
+            </thead>
+            
+            <tbody class="table-group-divider">
+                <tr class="align-middle">
+                    <th scope="row" class="">
+                        <h3>1</h3>
+                    </th>
+                    <td><h3 class="howTo">Acquire 5 petri dishes and bisect 15 planaria</h3></td>
+                    <td class="text-center"><img src="{{ url_for('static', filename='img/step1.jpg') }}" alt="Python Logo"></td>
+                </tr>
+                <tr class="align-middle">
+                    <th scope="row" class="">
+                        <h3>2</h3>
+                    </th>
+                    <td><h3 class="howTo">Put 6 in each dish and label them from 0-4 hours</h3></td>
+                    <td class="text-center"><img src="{{ url_for('static', filename='img/step2.jpg') }}" alt="Python Logo"></td>
+                </tr>
+                <tr class="align-middle">
+                    <th scope="row" class="">
+                        <h3>3</h3>
+                    </th>
+                    <td><h3 class="howTo">Set up 4 boxes with a LED bulb on a timer for as many hours as their group (1-4 hours)</h3></td>
+                    <td class="text-center"><img src="{{ url_for('static', filename='img/step3.jpg') }}" alt="Python Logo"></td>
+                </tr>
+                <tr class="align-middle">
+                    <th scope="row" class="">
+                        <h3>4</h3>
+                    </th>
+                    <td><h3 class="howTo">Record lengths of Planaria and qualitative observations. Place 1-4 hours Planaria groups under corresponding box and the 0 hours group on table, then turn on the timer.</h3></td>
+                    <td class="text-center"><img src="{{ url_for('static', filename='img/step4.jpg') }}" alt="Arduino Logo"></td>
+                </tr>
+                <tr class="align-middle">
+                    <th scope="row" class="">
+                        <h3>5</h3>
+                    </th>
+                    <td><h3 class="howTo">Repeat the previous step for 15 days.</h3></td>
+                    <td class="text-center"><img src="{{ url_for('static', filename='img/step5.jpg') }}" alt="Firebase Logo"></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </div>
+    </section>
+{% endblock %}

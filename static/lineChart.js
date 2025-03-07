@@ -1,5 +1,5 @@
 async function getData() {
-    const response = await fetch('Data.csv'); // Update to match the file path in the folder structure
+    const response = await fetch('/static/Data.csv'); // Update to match the file path in the folder structure
     const data = await response.text();
 
     const xLabels = []; // x-axis labels (groups)
